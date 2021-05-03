@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제1</title>
+
+    <style>
+
+        /* .box{
+            width:300px;
+            height:300px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .in_box{
+            width:100px;
+            height:100px;
+            background-color: tomato;
+        } */
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $('.box').css({
+                width:300,
+                height:300,
+                backgroundColor:'teal',
+                // float:'left'
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+            })
+
+            $('.in_box').css({
+                width:100,
+                height:100,
+                backgroundColor:'coral',
+                // margin:'100px auto',
+                // border:'3px solid black'
+            })
+
+        });//end
+
+    </script>
+
+</head>
+<body>
+
+    <div class="box">
+        <div class="in_box"></div>
+    </div>
+    
+</body>
+</html>

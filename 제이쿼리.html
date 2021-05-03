@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- =>제이쿼리 CDN
+    =>스타일 시트가 있으면 스타일보다 하단으로 작성할것
+    =>연결된 태그 안쪽으론 아무것도 작성하면 안됨 -->
+
+    <script>
+
+        $(document).ready(function(){
+            
+            $('.box').css({
+                width: 300 + 'px',
+                height: 300 + 'px',
+                backgroundColor: 'salmon'
+            });
+            // *제이쿼리 기본틀
+            // =>$(document).ready(function(){});
+            // 브라우저에게 제이쿼리를 사용하겠다 라고 알리는 함수 
+            // 반드시 기본틀을 작성하고 제이쿼리 사용할것 
+            // =>$() 선택자
+            // =>css({}) 
+            // =>px은 문자이기 때문에 따옴표로 감쌀것
+
+            $('.in_box').css({
+                width:100,
+                height:100,
+                backgroundColor:'gold',
+                marginBottom:10
+            })
+            
+            $('.in_box:nth-child(2)').css({
+                backgroundColor:'lightgreen'
+            })
+
+
+        });
+        //end
+
+
+    </script>
+    
+
+</head>
+<body>
+
+    <div class="box"></div>
+    <div class="box">
+        <div class="in_box"></div>
+        <div class="in_box"></div>
+    </div>
+
+    
+</body>
+</html>
